@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+<title>Responsive Table Headers Demo</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<style>
+
+td .head 		{ display: none; }
+
+@media (max-width: 30em) {
+	thead 		{ display: none; }
+	td 			{ display: block; }
+	td .head	{ display: inline; }
+	tr			{ display: block; margin-bottom: 1em; }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>O.C. Supertones Discography</h2>
+
+<table>
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Year</th>
+			<th>Type</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Adventures of the O.C. Supertones</td>
+			<td>1996</td>
+			<td>Studio</td>
+		</tr>
+		<tr>
+			<td>Supertones Strike Back</td>
+			<td>1997</td>
+			<td>Studio</td>
+		</tr>
+		<tr>
+			<td>Loud and Clear</td>
+			<td>2000</td>
+			<td>Studio</td>
+		</tr>
+		<tr>
+			<td>Live! Volume One</td>
+			<td>2002</td>
+			<td>Live</td>
+		</tr>
+		<tr>
+			<td>Hi-Fi Revival</td>
+			<td>2002</td>
+			<td>Studio</td>
+		</tr>
+		<tr>
+			<td>Revenge of the O.C. Supertones</td>
+			<td>2004</td>
+			<td>Studio</td>
+		</tr>
+		<tr>
+			<td>Unite</td>
+			<td>2005</td>
+			<td>Compilation</td>
+		</tr>
+		<tr>
+			<td>Faith of a Child</td>
+			<td>2005</td>
+			<td>Compilation</td>
+		</tr>
+		<tr>
+			<td>Re-Unite</td>
+			<td>2010</td>
+			<td>Compilation</td>
+		</tr>
+		<tr>
+			<td>For The Glory</td>
+			<td>2012</td>
+			<td>Studio</td>
+		</tr>
+	</tbody>
+</table>
+
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="jquery.responsive_table_headers.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$('table').responsive_table_headers();
+	});
+</script>
+
+</body>
+
+</html>
