@@ -7,7 +7,7 @@
 		var settings = $.extend({
 			classAttr: 'head',
 			element: 'h4',
-			seperator: ': '
+			separator: ': '
 		}, options);
 		
 		var headers = [];
@@ -26,7 +26,7 @@
 					settings.classAttr+
 					'">'+
 					headers[i]+
-					settings.seperator+
+					settings.separator+
 					'</'+
 					settings.element+
 					'>'
